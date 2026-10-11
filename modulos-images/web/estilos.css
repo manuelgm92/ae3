@@ -1,0 +1,28 @@
+body {
+    font-family: system-ui, sans-serif;
+    margin: 2rem;
+}
+
+#controles {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: end;
+    margin-bottom: 1.5rem;
+}
+
+#controles label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+}
+
+.galeria {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    display: block;
+}

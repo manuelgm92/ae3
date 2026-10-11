@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria images.alumno.local</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Galeria de prueba</h1>
+    <form id="controles">
+        <label>Tamaño
+            <select id="size">
+                <option value="150">150</option>
+                <option value="300" selected>300</option>
+                <option value="600">600</option>
+            </select>
+        </label>
+        <label>Ancho de borde
+            <input type="range" id="border" min="0" max="12" value="2">
+        </label>
+        <label>Color del borde
+            <input type="color" id="borderColor" value="#333333">
+        </label>
+        <label>Enfoque
+            <select id="sharpen">
+                <option value="0" selected>0</option>
+                <option value="30">30</option>
+                <option value="60">60</option>
+                <option value="100">100</option>
+            </select>
+        </label>
+        <label>Desenfoque
+            <input type="range" id="blur" min="0" max="8" value="0">
+        </label>
+        <button type="submit">Generar</button>
+    </form>
+    <div class="galeria" id="galeria"></div>
+    <script src="app.js"></script>
+</body>
+</html>
