@@ -1,0 +1,1 @@
+# Práctica guiada — Módulos de nginx: procesado de imágenes con `image_filter`
