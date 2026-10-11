@@ -271,3 +271,15 @@ docker exec dpl-lab goaccess /var/log/nginx/images-alumno.access.log \
 docker exec dpl-lab tail -n 10 /var/log/nginx/images-alumno.access.log
 ```
 
+## Problemas encontrados
+
+Fallo por una errata en el archivo de configuración, se prueba a generar de nuevo el `.crt` y `.key`
+
+```bash
+root:/etc/nginx/sites-enabled# nginx -t 
+2026/10/11 22:11:26 [emerg] 1156#1156: cannot load certificate "/etc/ssl/dpl/imgaes.alumno.local.crt": BIO_new_file() failed (SSL: error:80000002:system library::No such file or directory:calling fopen(/etc/ssl/dpl/imgaes.alumno.local.crt, r) error:10000080:BIO routines::no such file)
+nginx: configuration file /etc/nginx/nginx.conf test failed
+```
+
+Se soluciona una vez identificada la errata `imgaes` por `images` en el archivo de configuración `images.alumno.local`.
+
