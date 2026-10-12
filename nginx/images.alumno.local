@@ -75,4 +75,14 @@ server {
     server_name www.images.alumno.local;
     return 301 https://images.alumno.local$request_uri;
 }
+# www -> dominio base (https)
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+    server_name www.images.alumno.local;
 
+    ssl_certificate     /etc/ssl/dpl/images.alumno.local.crt;
+    ssl_certificate_key /etc/ssl/dpl/images.alumno.local.key;
+
+    return 301 https://images.alumno.local$request_uri;
+}
