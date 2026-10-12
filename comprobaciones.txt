@@ -16,8 +16,25 @@ app.js      estilos.css index.html
 ```
 
 git log --oneline
+```
+8044264 (HEAD -> main, origin/main) docs(readme): completar y estructurar el archivo README.md con todas las secciones de la práctica
+60f2359 docs(comprobaciones): actualizar el contenido de comprobaciones.txt con nuevas pruebas
+b4f1674 feat(nginx): actualizar bloque de redirección para www
+d3c77f3 docs(comprobaciones): añadir comprobaciones.txt con las salidas reales de validación
+4b789ad feat(nginx): añadir la configuración del sitio para images.alumno.local
+2f31303 chore(ssl): actualizar claves y certificados SSL corregidos en el repositorio
+42ffbe7 docs(readme): añadir documentación sobre la instalación, generación de imagenes, creación de la aplicación de galería, generar crt
+b42818a chore(ssl): guardar el certificado público y sus instrucciones
+b0013bc refactor(project): reorganizar la estructura y mover web/archivos a la raíz
+daedb3b chore(config): añadir archivo .gitignore
+7ade7bf feat(galeria): crear la aplicación de la galería
+ec1d842 docs: añadir README vacío
+```
 
 git log --format='%an <%ae>' | sort -u
+```
+Manuel Gonzalez Martinez <manugm1992@gmail.com>
+```
 
 grep -RniE "BEGIN (RSA |EC |)PRIVATE KEY|password|passwd" . --exclude-dir=.git || echo "sin secretos aparentes"
 ```
@@ -35,7 +52,7 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 ```
 
 docker exec dpl-lab nginx -T | grep -E "server_name|image_filter|auth_basic|load_module"
-````
+```
 nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
 	# server_names_hash_bucket_size 64;
