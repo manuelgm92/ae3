@@ -22,6 +22,18 @@ flowchart LR
 
 ---
 
+## Índice
+
+1. [Instalación](#1-instalación)
+2. [Generación de las imágenes](#2-generación-de-las-imágenes)
+3. [Configuración de Nginx](#3-configuración-de-nginx)
+4. [Aplicación web y reparto de responsabilidades](#4-aplicación-web-y-reparto-de-responsabilidades)
+5. [Comprobación del funcionamiento](#5-comprobación-del-funcionamiento)
+6. [Problemas encontrados](#6-problemas-encontrados)
+7. [Repositorio remoto](#7-repositorio-remoto)
+
+---
+
 ## 1. Instalación
 
 Módulo `libnginx-mod-http-image-filter`, `ImageMagick` y `goaccess` dentro de `dpl-lab`; activación del módulo y comprobación con `nginx -V` / `nginx -T`.
