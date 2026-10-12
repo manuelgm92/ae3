@@ -17,7 +17,9 @@ app.js      estilos.css index.html
 
 git log --oneline
 ```
-8044264 (HEAD -> main, origin/main) docs(readme): completar y estructurar el archivo README.md con todas las secciones de la práctica
+053013e (HEAD -> main) refactor(nginx): renombrar el archivo de configuración a .conf
+c50d724 docs(comprobaciones): añadir salidas de git log a comprobaciones.txt
+8044264 (origin/main) docs(readme): completar y estructurar el archivo README.md con todas las secciones de la práctica
 60f2359 docs(comprobaciones): actualizar el contenido de comprobaciones.txt con nuevas pruebas
 b4f1674 feat(nginx): actualizar bloque de redirección para www
 d3c77f3 docs(comprobaciones): añadir comprobaciones.txt con las salidas reales de validación
